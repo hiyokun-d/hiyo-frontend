@@ -1,0 +1,101 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #414141;
+}
+
+.card {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(193, 193, 193);
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgb(130, 249, 233);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: width 1s cubic-bezier(1,-0.42,0,1.23),
+    height 0.5s cubic-bezier(1,-0.59,0,1.28), box-shadow 0.5s ease,
+    border 2.5s ease, background-color 0.5s ease;
+  overflow: hidden;
+  border: 10px double rgb(130, 249, 233);
+  color: black;
+}
+
+.card:hover {
+  transition: width 1s cubic-bezier(0.92, 0.15, 0.07, 1.16),
+    height 0.5s cubic-bezier(0.92, 0.15, 0.07, 1.16), box-shadow 1s ease,
+    border 3s ease, background-color 1s ease;
+  width: 500px;
+  height: 500px;
+  box-shadow: 10px 0px 20px rgb(68, 87, 255), -10px 0px 10px rgb(163, 250, 154),
+    0px 10px 25px rgb(255, 87, 3), 0px -10px 15px rgb(255, 3, 87);
+  border: 5px double rgb(68, 87, 255);
+  background-color: rgb(231, 231, 231);
+}
+
+.card > .header > .Login-title {
+  transition: transform 1s;
+  transform: translateY(-100px);
+}
+
+.card:hover > .header > .Login-title {
+  transform: translateY(-100px);
+}
+
+.card:hover > .header > .Login-title {
+  transform: translateY(-120px);
+}
+
+.card > .header > .Login-icon {
+  transition: all 0.5s;
+  transform: translateX(27px) translateY(20px);
+}
+
+.card:hover > .header > .Login-icon {
+  transition: all 1.5s;
+  transform: translateY(-80px) translateX(-50px);
+  font-size: 40px;
+}
+
+.Login-button {
+  transform: translateY(500px);
+  transition: transform 1s, letter-spacing 1s;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card:hover > .Login-button {
+  transition: transform 1s, letter-spacing 2s;
+  transform: translateY(-40px);
+}
+
+.card > .Login-button > .Login-eb {
+  transition: margin-bottom 0.5s;
+}
+
+.card:hover > .Login-button:hover > .Login-eb {
+  margin-bottom: 20px;
+}
+
+@keyframes rainbow-effect-text {
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  25% {
+    color: rgb(255, 255, 0);
+  }
+  50% {
+    color: rgb(0, 255, 0);
+  }
+  75% {
+    color: rgb(0, 255, 255);
+  }
+  100% {
+    color: rgb(0, 0, 255);
+  }
+}
